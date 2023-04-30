@@ -15,5 +15,5 @@
 	>auth 12345678
 	>subscribe topic_persist_request_public
   ```
-  ![image](_images/cjwt001.png)
+  ![image](http://docs.fox-tech.cn/_images/cjwt001.png)
 

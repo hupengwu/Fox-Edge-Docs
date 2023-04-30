@@ -349,16 +349,16 @@
   
   在浏览器中打开，http://192.168.3.133 <br>
   此时将出现登录页面，默认的初始账号/密码：admin/12345678
-  ![image](_images/login-ui.jpg)
+  ![image](http://docs.fox-tech.cn/_images/login-ui.jpg)
   
   登录成功后进入首页<br>
-  ![image](_images/home-page.jpg)
+  ![image](http://docs.fox-tech.cn/_images/home-page.jpg)
 
 ## 组件下载安装
 
 ###### 1、初始状态
   从 仓库管理>服务模块配置，可以看到，新安装的Fox-Edge只有gateway-service和manager-service两个内核服务<br>
-  ![image](_images/service01.png)
+  ![image](http://docs.fox-tech.cn/_images/service01.png)
   
 ###### 2、下载服务
   从 仓库管理>服务模块仓库，可以看到在灵狐技术网站的中央仓库提供的服务列表。<br>
@@ -387,26 +387,26 @@
 	设备，该工具服务可以提供一个代理，将请求发送给device-service或者channel-xxxx-service
 	
   ```
-  ![image](_images/service02.png)
+  ![image](http://docs.fox-tech.cn/_images/service02.png)
 ###### 3、安装服务
-  ![image](_images/service03.png)
+  ![image](http://docs.fox-tech.cn/_images/service03.png)
   
 ###### 3、检查安装
-  ![image](_images/service04.png)
+  ![image](http://docs.fox-tech.cn/_images/service04.png)
   
 ## 简单测试验证
 
 ###### 1、通道的测试
   从 任务管理>通道操作任务，给模拟设备发送一下测试报文，可以看到模拟设备返回了响应报文，此时说明Fox-Edge跟模拟设备通信上了<br>
-  ![image](_images/service05.png)
+  ![image](http://docs.fox-tech.cn/_images/service05.png)
   
 ###### 2、设备的测试
   从 任务管理>设备操作任务，给模拟设备发送一下操作请求，可以看到模拟设备返回了响应数据，此时说明Fox-Edge跟模拟设备能够正常会话上了<br>
-  ![image](_images/service06.png)
+  ![image](http://docs.fox-tech.cn/_images/service06.png)
 ###### 3、添加监控任务
   从 任务管理>设备监控任务，给控制器服务添加一个监控任务，让其周期性的去访问远端设备<br>
-  ![image](_images/service07.png)
+  ![image](http://docs.fox-tech.cn/_images/service07.png)
   
 ###### 4、检查监控数据
   从 设备管理>设备数值，可以看到添加监控任务后，不断从远端设备获得并持续更新数据，这些设备数据保存在redis和mysql当中<br>
-  ![image](_images/service08.png)
+  ![image](http://docs.fox-tech.cn/_images/service08.png)

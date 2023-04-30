@@ -8,7 +8,7 @@
 但是，不管是现在的物联网公有云方案，还是传统的智能网关方案，在解决这个问题上，都有解决方案本身带来的重大缺陷。
 所以，Fox-Edge提供另一种解决方案，来供中小企业解决数据如何上云的集中管理需求。
 
-![image](_images/networking.jpg)
+![image](http://docs.fox-tech.cn/_images/networking.jpg)
 ## 方案对比
 
 ##### 1、传统应用系统解决方案
@@ -73,7 +73,7 @@
 1. x86系列的小型工控机
 2. 推荐4G物理内存，64G存储空间。
 
-![image](_images/device.jpg)
+![image](http://docs.fox-tech.cn/_images/device.jpg)
 
 ## 产品特点
 fox-edge 边缘计算 采用积木式的全开放式的架构，方便用户自选各种组件和从仓库中选择解码器。目前正在增强解码器仓库功能，方便各用户互相分享自己开发的解码器。
@@ -86,7 +86,7 @@ fox-edge 边缘计算 采用积木式的全开放式的架构，方便用户自�
 - 免费的产品，用户可以从官网免费下载产品，用于非商业用途。
 
 ## 软件架构
-![image](_images/system.jpg)
+![image](http://docs.fox-tech.cn/_images/system.jpg)
 
 - 可以通过自行开发通道服务部件和通信协议解码器插件，对接下行现场网络的智能设备
 - 可以自行调整或者替换系统自带控制器、触发器部件，实现项目需要的业务功能
