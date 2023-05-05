@@ -13,6 +13,8 @@
 	# 版本特性
 	1、合并了gateway和manager为一个manager进程，减少多进程需要的内存占用空间
 	2、将登录认证修改为JWT方式，方便共用一个账号登录
+	3、新增了前端包的下载页面，方便在线更新前端包
+	4、增强了manager更新的安全性
 	
 	# 下载链接
 	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.2.tar.gz
