@@ -71,7 +71,7 @@
 
 ## 硬件环境
 1. x86系列的小型工控机
-2. 推荐4G物理内存，64G存储空间。
+2. 最低配置：4G物理内存（推荐8G内存），64G存储空间。
 
 ![image](http://docs.fox-tech.cn/_images/device.jpg)
 
