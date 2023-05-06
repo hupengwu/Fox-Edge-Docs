@@ -10,8 +10,8 @@
   - **Fox-Cloud**
     - [快速了解](fox-cloud-readme.md)  
 	
-  - **解码器**
-    - [Modbus](fox-edge-protocol-modbus-core.md)  
+  - **通信协议**
+    - [01. Modbus](fox-edge-protocol-modbus-core.md)  
   
 - 其他
 

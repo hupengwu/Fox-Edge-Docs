@@ -31,7 +31,7 @@
    请到[灵狐官网](http://www.fox-tech.cn/)的页面下载Fox-Edge最新的初始安装包
 
   ```	
-	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.1.tar.gz
+	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.3.tar.gz
 
   ```
 ## 基础软件安装

@@ -1,8 +1,8 @@
-# fox-edge-server-protocol-modbus
+# ModBus 通讯协议解码器
 
 ## 介绍
 ``` 
-modbus的通用解码器，它只需要配置配置ModBus的模板文件，就可以进行ModBus报文协议的数据解析
+Fox-Edge的ModBus的通用解码器，它只需要配置配置ModBus的模板文件，就可以进行ModBus报文协议的数据解析
 ``` 
 
 ## 资料
@@ -73,12 +73,38 @@ fox-edge
 ``` 
 
 #### 格式说明
-101.CETUPS_Read System Measures Table.csv
+- 101.CETUPS_Read System Measures Table.csv
 
 | value_name	| value_index	| bit_index	 | bit_length	 | value_type	 | magnification| determine	| remark | 
 |---------------|---------------|------------|---------------|---------------|------------	| --------	| -----  | 
 |对象名称       |modbus地址     |该地址bit位 |占用多少个bit  |数据类型       |放大倍数   	| 判定方式	| 备注   | 
 
+
+```txt
+说明：ModBus解码器会根据这张表，对设备进行读取数据后，进行解析成方便用户理解的数据对象
+
+1、value_index
+也就是modbus中的地址偏移量。对于一个modbus偏移量来说，它的大小为16位的空间
+
+2、bit_index和bit_length
+有些设备厂家为了节省空间，会将一批告警状态数据保存在设备的某个ModBus地址偏移量当中。对于这种用一个16位地址
+保存一批状态数据的设备，可以采用bit_index和bit_length自动分拆成一批对象
+
+3、value_type
+modbus设备的16位数据，可以被设备厂家们用来保存bool、int、float等数据格式，解码器会对这16位数据进行相应的解析
+
+4、magnification
+有些设备厂家，为了保存非常大数值的数据，会采用定点数的方式，在16位mosbus地址空间上，约定放大了一定的倍数保存。
+
+5、determine
+对于bool类型的数值，什么时候是true，什么时候是false，厂商们通常会有特定的数值约定，可以通过判定方式判定具体的bool数值
+
+
+说明：
+具体内容，可以参考101.CETUPS_Read System Measures Table.csv文件内容
+
+
+``` 
 
 
 ### 报文配置
