@@ -24,6 +24,7 @@
 	2、MySql：8.0以上版本
 	3、Redis：6.0以上版本
 	4、nginx：1.18以上版本
+	5、ufw：0.36.1以上版本
 
   ```
 
@@ -31,7 +32,7 @@
    请到[灵狐官网](http://www.fox-tech.cn/)的页面下载Fox-Edge最新的初始安装包
 
   ```	
-	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.3.tar.gz
+	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.4.tar.gz
 
   ```
 ## 基础软件安装
@@ -250,6 +251,43 @@
 
   ```
   
+- ufw的安装
+
+  ```sh
+	#更新仓库
+	apt update
+
+	#默认安装防火墙
+	apt install ufw
+
+	#版本查看
+	ufw version
+
+	#查看防火墙运行状态，此时默认是未激活状态的
+	#注意：此时千万别激活，否则你会发现全部都登录不上去了，因为防火墙默认的策略是"禁止所有入向，放行所有出向"
+	ufw status
+
+	#重要：首先要放开ssh端口和web端口和gateway端口，保证你在防火墙激活后，能够登录SSH和WEB
+	#在开发阶段，可以自己添加放开的指定端口
+	ufw allow 22/tcp
+	ufw allow 80/tcp
+	ufw allow 9000/tcp
+
+
+	#启动防火墙：此时，你会发现无法通过web访问工控机了，因为防火墙默认的策略是"禁止所有入向，放行所有出向"
+	ufw enable
+
+	#查看防火墙策略的编号
+	ufw status numbered
+
+	#删除指定的策略
+	#ufw delete 2
+
+	#禁止防火墙：开发调试阶段，可以先关闭防火墙
+	#ufw disable
+
+  ```
+  
 ## Fox-Edge安装
 
 - Fox-Edge安装包下载
@@ -259,10 +297,10 @@
 	cd /home
 	
 	#下载Fox-Edge安装包
-	wget -c http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.1.tar.gz
+	wget -c http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.4.tar.gz
 
 	#解压安装包
-	tar -xzvf  fox-edge-1.0.0.tar.gz
+	tar -xzvf  fox-edge-1.0.4.tar.gz
 	
 	#移动目录
 	mv fox-edge /opt

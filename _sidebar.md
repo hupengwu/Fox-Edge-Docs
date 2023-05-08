@@ -12,6 +12,7 @@
 	
   - **通信协议**
     - [01. Modbus](fox-edge-protocol-modbus-core.md)  
+	- [02. DLT645](fox-edge-protocol-dlt645-core.md)  
   
 - 其他
 

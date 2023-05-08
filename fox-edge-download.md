@@ -3,6 +3,23 @@
 ## Fox-Edge
 >您在下载灵狐软件的前，请先阅读[许可条款](license.md)，当您在下载下列软件的时候，默认您已经接受了该许可条款。
 
+- Fox-Edge 1.0.4
+
+   日期：2023-05-07
+   
+   [下载](http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.4.tar.gz)
+
+  ```md
+	# 版本特性
+	1、调整了gateway的api接口，减去manage服务启动的依赖，加快登录页面的访问
+	2、为manage增加了swagger，方面前端查看API和API测试
+
+	
+	# 下载链接
+	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.4.tar.gz
+  ```
+  
+  
 - Fox-Edge 1.0.3
 
    日期：2023-05-06
