@@ -9,6 +9,7 @@
 	
   - **Fox-Cloud**
     - [快速了解](fox-cloud-readme.md)  
+	- [同步模式](fox-cloud-synch-mode.md)  
 	
   - **通信协议**
     - [01. Modbus](fox-edge-protocol-modbus-core.md)  

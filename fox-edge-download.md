@@ -3,6 +3,21 @@
 ## Fox-Edge
 >您在下载灵狐软件的前，请先阅读[许可条款](license.md)，当您在下载下列软件的时候，默认您已经接受了该许可条款。
 
+- Fox-Edge 1.0.5
+
+   日期：2023-05-011
+   
+   [下载](http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.5.tar.gz)
+
+  ```md
+	# 版本特性
+	1、将模板和解码器的分拆，并提供了已安装的解码器的导出功能
+
+	
+	# 下载链接
+	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.5.tar.gz
+  ```
+  
 - Fox-Edge 1.0.4
 
    日期：2023-05-07
