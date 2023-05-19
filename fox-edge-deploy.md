@@ -272,6 +272,9 @@
 	ufw allow 22/tcp
 	ufw allow 80/tcp
 	ufw allow 9000/tcp
+	
+	#允许某个IP访问
+	#ufw allow from 120.230.79.20
 
 
 	#启动防火墙：此时，你会发现无法通过web访问工控机了，因为防火墙默认的策略是"禁止所有入向，放行所有出向"
@@ -279,6 +282,7 @@
 
 	#查看防火墙策略的编号
 	ufw status numbered
+	
 
 	#删除指定的策略
 	#ufw delete 2

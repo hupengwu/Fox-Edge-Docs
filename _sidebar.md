@@ -8,7 +8,7 @@
     - [许可条款](fox-edge-license.md)
 	
   - **Fox-Cloud**
-    - [快速了解](fox-cloud-readme.md)  
+    - [快速了解](fox-cloud-quickstart.md)  
 	- [同步模式](fox-cloud-synch-mode.md)  
 	
   - **通信协议**
