@@ -9,6 +9,7 @@
 	
   - **Fox-Cloud**
     - [快速了解](fox-cloud-quickstart.md)  
+	- [在线预览](fox-cloud-preview.md) 
 	- [同步模式](fox-cloud-synch-mode.md)  
 	
   - **通信协议**

@@ -273,9 +273,8 @@
 	ufw allow 80/tcp
 	ufw allow 9000/tcp
 	
-	#允许某个IP访问
-	#ufw allow from 120.230.79.20
-
+	#允许开发者的IP访问。自己的公网IP可以通过百度浏览器上搜索IP，百度会反射回你的公网IP给你
+	#ufw allow from 120.230.79.1/24
 
 	#启动防火墙：此时，你会发现无法通过web访问工控机了，因为防火墙默认的策略是"禁止所有入向，放行所有出向"
 	ufw enable
@@ -283,7 +282,6 @@
 	#查看防火墙策略的编号
 	ufw status numbered
 	
-
 	#删除指定的策略
 	#ufw delete 2
 
@@ -301,10 +299,10 @@
 	cd /home
 	
 	#下载Fox-Edge安装包
-	wget -c http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.4.tar.gz
+	wget -c http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.5.tar.gz
 
 	#解压安装包
-	tar -xzvf  fox-edge-1.0.4.tar.gz
+	tar -xzvf  fox-edge-1.0.5.tar.gz
 	
 	#移动目录
 	mv fox-edge /opt
