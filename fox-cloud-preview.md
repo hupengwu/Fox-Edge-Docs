@@ -5,3 +5,5 @@
 你可以通过它，查看各地现场的Fox-Edge汇聚到Fox-Cloud的数据<br>
 
 ![image](http://docs.fox-tech.cn/_images/fox-cloud-04.png)
+
+![image](http://docs.fox-tech.cn/_images/fox-cloud-05.png)
