@@ -299,10 +299,10 @@
 	cd /home
 	
 	#下载Fox-Edge安装包
-	wget -c http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.5.tar.gz
+	wget -c http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.6.tar.gz
 
 	#解压安装包
-	tar -xzvf  fox-edge-1.0.5.tar.gz
+	tar -xzvf  fox-edge-1.0.6.tar.gz
 	
 	#移动目录
 	mv fox-edge /opt
