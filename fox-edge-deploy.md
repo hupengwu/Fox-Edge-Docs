@@ -29,10 +29,10 @@
   ```
 
 ###### Fox-Edge系统
-   请到[灵狐官网](http://www.fox-tech.cn/)的页面下载Fox-Edge最新的初始安装包
+   请到[灵狐云端](http://cloud.fox-tech.cn)的页面下载Fox-Edge最新的初始安装包
 
   ```	
-	http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.4.tar.gz
+	http://repository.fox-tech.cn/system/fox-edge/1.0.0/fox-edge-20230629220202.tar.gz
 
   ```
 ## 基础软件安装
@@ -299,10 +299,10 @@
 	cd /home
 	
 	#下载Fox-Edge安装包
-	wget -c http://www.fox-tech.cn/repository/fox-edge-server/download/fox-edge-1.0.6.tar.gz
+	wget -c http://repository.fox-tech.cn/system/fox-edge/1.0.0/fox-edge-20230629220202.tar.gz
 
 	#解压安装包
-	tar -xzvf  fox-edge-1.0.6.tar.gz
+	tar -xzvf  fox-edge-20230629220202.tar.gz
 	
 	#移动目录
 	mv fox-edge /opt
