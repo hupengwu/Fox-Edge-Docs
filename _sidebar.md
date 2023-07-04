@@ -5,6 +5,7 @@
     - [环境部署](fox-edge-deploy.md)
     - [项目介绍](fox-edge-introduction.md)
     - [软件下载](fox-edge-download.md)  
+	- [相关视频](fox-edge-video.md)  
 	
   - **Fox-Cloud**
     - [快速了解](fox-cloud-quickstart.md)  

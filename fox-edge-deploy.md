@@ -28,6 +28,14 @@
 
   ```
 
+###### Linux系统
+   请到[Ubuntu](https://cn.ubuntu.com/download/server/step1)的页面下载服务器版本
+
+  ```	
+	https://releases.ubuntu.com/22.04.2/ubuntu-22.04.2-live-server-amd64.iso
+
+  ```
+  
 ###### Fox-Edge系统
    请到[灵狐云端](http://cloud.fox-tech.cn)的页面下载Fox-Edge最新的初始安装包
 
@@ -36,15 +44,48 @@
 
   ```
 ## 基础软件安装
-下面以Ubuntu 20.04
+下面以Ubuntu 22.04为例
+
+- 基础软件 net-tools
+
+  ```sh
+	# 更新软件	
+    sudo apt-get update 
+	
+	# net-tools是linux下的网络基本工具，包含ifconfig命令
+	sudo apt-get install net-tools
+
+  ```
+  
+- 远程登录linux
+
+  ```sh
+	# 修改root密码，方便后续安装软件
+	sudo passwd	root
+
+	
+	# 重启操作系统
+	su root
+
+  ```
+  
+- 基础软件 vim
+
+  ```sh
+	sudo apt install vim -y
+
+  ```
+  
   
 - 基础软件 dos2unix
 
   ```sh
 	# dos2unix工具：windows环境下编辑的sh文件，经常会因为文件格式不同导致无法运行，此时需要使用dos2unix进行格式转
-	# 换处理，否则会出现/bin/bash^M: bad interpreter: No such file or directory的错误，导致无法执行
-	
+	# 换处理，否则会出现/bin/bash^M: bad interpreter: No such file or directory的错误，导致无法执行	
     apt install dos2unix -y
+	
+	# dmidecode工具：查询CPU信息，这是设备序列号的信息来源
+	apt install dmidecode -y
 
   ```
   
@@ -98,7 +139,7 @@
 	# 更新软件
 	apt-get update    
 	
-	# W
+	# 安装jdk
 	apt-get install openjdk-11-jdk -y
 	
 	#查看安装状态
@@ -174,7 +215,7 @@
 	vim /etc/redis/redis.conf
 	#1.注释掉 bind 127.0.0.1 ::1   位置在69行左右
 	#2.修改protected-mode为no      位置在88行左右
-	#3.修改requirepass为12345678   位置在507行左右
+	#3.修改requirepass为12345678   位置在507行左右或者在790行左右
 
 	#重启redis
 	systemctl restart redis-server
@@ -248,6 +289,36 @@
 
 	#重新装载配置
 	nginx -s reload
+
+  ```
+ 
+- samba的安装
+
+  ```sh
+	#更新
+	apt-get update
+
+	#安装samba
+	apt-get install samba -y
+
+	#修改配置文件
+	vim /etc/samba/smb.conf  
+	#增加下面的配置
+	#------------------#
+	[share]
+	# 设置共享目录
+	path = /
+	# 设置访问用户 
+	valid users = root
+	# 设置读写权限
+	writable = yes  
+	#------------------#
+
+	#创建samba用户
+	smbpasswd -a root
+
+	#重启samba
+	service smbd restart
 
   ```
   
