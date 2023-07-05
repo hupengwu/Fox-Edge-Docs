@@ -4,7 +4,8 @@
     - [在线预览](fox-edge-preview.md)  
     - [环境部署](fox-edge-deploy.md)
     - [项目介绍](fox-edge-introduction.md)
-    - [软件下载](fox-edge-download.md)  
+    - [软件下载](fox-edge-download.md) 
+	- [使用教程](fox-edge-course.md) 	
 	- [相关视频](fox-edge-video.md)  
 	
   - **Fox-Cloud**
