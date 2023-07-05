@@ -44,7 +44,14 @@
 
   ```
 ## 基础软件安装
-下面以Ubuntu 22.04为例
+
+
+- 操作系统 Ubuntu-server
+  ```
+	# ubuntu在安装阶段，建议选择最小安装和安装ssh，其他建议操作系统的默认值安装
+	
+  ```
+
 
 - 基础软件 net-tools
 
@@ -60,11 +67,11 @@
 - 远程登录linux
 
   ```sh
-	# 修改root密码，方便后续安装软件
+	# 用sudo修改root的初始密码，方便后续安装软件
 	sudo passwd	root
 
 	
-	# 重启操作系统
+	# 切换为root账号
 	su root
 
   ```

@@ -216,50 +216,50 @@ DI值只是方便对象在报文传输，对象具体含有还是要给它取个
 ### 串口配置
 - 1、新增COM1和COM2两个虚拟串口，这两个串口默认是环回的，也就是给COM1发数据，COM2能收到数据
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/serial2.jpg)
+![image](http://docs.fox-tech.cn/_images/serial2.jpg)
 
 - 2、打开串口精灵，开始监听COM1和COM2
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/serial1.jpg)
+![image](http://docs.fox-tech.cn/_images/serial1.jpg)
 
 - 3、打开DLT645模拟器，打开COM2，让它在COM2接收智能网关待会请求报文
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/serial3.jpg)
+![image](http://docs.fox-tech.cn/_images/serial3.jpg)
 
 - 4、打开VMWARE，打开COM1，并映射陈串口2，智能网关从这个串口发送数据
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/serial4.jpg)
+![image](http://docs.fox-tech.cn/_images/serial4.jpg)
 
 
 ### 智能网关和DLT645电表的通信测试
 - 1、登录智能网关后，切换到通道页面，建立一个串口通道。注意在智能网关中，串口2的名称未ttyS1
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645%204.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645%204.jpg)
 
 - 2、切换到设备页面，建立一个DLT645设备，并指明使用刚才建立的串口通道
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645%205.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645%205.jpg)
 
 
 - 3、建立一个通道操作任务，向电表发送一个报文看看，此时可以看到电表的返回数据，说明可以跟电表通信正常
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645%202.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645%202.jpg)
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/serial1.jpg)
+![image](http://docs.fox-tech.cn/_images/serial1.jpg)
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645.jpg)
 
 - 4、建立一个设备操作任务，向电表发送一个请求，看看解码器对报文的数据解码，可以看到数据被解析出来了
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645%203.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645%203.jpg)
 
 - 5、建立一个监控任务，让智能网关不断收集DLT645电表的数据
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645%206.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645%206.jpg)
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645.jpg)
 
 - 6、进入设备数值页面，可以看到智能网关不断的向DLT645电表获取数据
 
-![image](http://120.79.69.201:9002/fox-edge-server/doc/demo/dlt645/dlt645%207.jpg)
+![image](http://docs.fox-tech.cn/_images/dlt645%207.jpg)
 

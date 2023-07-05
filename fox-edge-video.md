@@ -1,7 +1,7 @@
 # 相关视频
 
-### 1.0 Ubuntu22.04
-
+#### 01. 系统安装
+参考[环境部署](http://docs.fox-tech.cn/#/fox-edge-deploy) 的教程，录制了下列视频
 
 - Ubuntu22.04的下载和安装（VMWare）
   <video width="640" height="480" controls>
