@@ -1,10 +1,4 @@
-# 相关视频
-
-## 01. 系统安装
-
-### 01.1 系统安装-分步操作
-
-#### 01.1.1 下载Linux安装盘
+### 1. 下载Linux安装盘
 
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200638.340.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200721.939.jpg)
@@ -12,7 +6,7 @@
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200736.009.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200743.047.jpg)
 
-#### 01.1.2 创建VMWare虚拟机
+### 2. 创建VMWare虚拟机
 
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200751.440.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200759.099.jpg)
@@ -31,7 +25,7 @@
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200938.374.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200941.568.jpg)
 
-#### 01.1.3 开始安装Linux操作系统
+### 3. 开始安装Linux操作系统
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_200946.900.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_201015.264.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_201046.040.jpg)
@@ -53,7 +47,7 @@
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_201323.691.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_201328.902.jpg)
 
-#### 01.1.4 启动Linux操作系统
+### 4. 启动Linux操作系统
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_201332.111.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_201344.931.jpg)
 ![image](http://docs.fox-tech.cn/_images/Linux_install/Linux_install.mp4_20230705_201352.931.jpg)

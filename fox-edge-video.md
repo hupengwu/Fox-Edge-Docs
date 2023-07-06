@@ -9,8 +9,7 @@
 	  <source src="http://docs.fox-tech.cn/video/Linux_install.mp4" type="video/mp4">
   </video>
   
-  [分步教程](fox-edge-video-course-01.md ':include')
-	
+
 - Ubuntu22.04的IP查看
   <video width="640" height="480" controls>
 	  <source src="http://docs.fox-tech.cn/video/Linux_ifconfig.mp4" type="video/mp4">
@@ -20,6 +19,7 @@
   <video width="640" height="480" controls>
 	  <source src="http://docs.fox-tech.cn/video/Linux_Fox_install.mp4" type="video/mp4">
   </video>
+  
 
 - Fox-Edge的使用
   <video width="640" height="480" controls>
