@@ -16,6 +16,7 @@
   - **通信协议**
     - [01. Modbus](fox-edge-protocol-modbus-core.md)  
 	- [02. DLT645](fox-edge-protocol-dlt645-core.md)  
+	- [03. zs-sht30-1t-1h](fox-edge-protocol-zs-sht30-1t-1h.md)  	
   
 - 其他
 
