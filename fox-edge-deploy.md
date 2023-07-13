@@ -368,6 +368,35 @@
 
   ```
   
+- usb模块的安装
+
+为了扩展工控机的物理接口，开发者经常会在市场上购买USB转LORA、串口之类的外部模块，插入LINUX后使用，如何检测是否识别成功呢？
+下面以淘宝上购买的某家USB-485为例，插入USB-485模块后Ubuntu立即自动识别出QinHeng Electronics CH340 serial converter这个USB设备，
+并自动挂载成名字为ttyUSB0的串口设备。后面就可以通过channel-serial服务，直接使用该ttyUSB0串口
+
+  ```sh
+	# 未插入USB模块之前，先执行lsusb：查看工控机上的usb设备是否存在
+	lsusb
+
+	# 此时只有两个系统自带的虚拟化usb设备
+	#Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+	#Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+	# 插入淘宝USB转串口模块后，再执行lsusb，发现多出来一个USB模块，
+	lsusb
+	#Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+	#Bus 001 Device 003: ID 1a86:7523 QinHeng Electronics CH340 serial converter <---------这是发现的USB转串口模块
+	#Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+	#确认串口节点是否存在
+	ls -al /dev/ttyU*
+	#crw-rw---- 1 root dialout 188, 0 Jul 13 14:02 /dev/ttyUSB0 <---------这是发现了串口生成的串口
+
+
+  ```
+  
+
+  
 ## Fox-Edge安装
 
 - Fox-Edge安装包下载
