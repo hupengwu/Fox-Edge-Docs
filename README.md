@@ -43,5 +43,8 @@ fox-edge 边缘计算 采用积木式的全开放式的架构，方便用户自�
 在安装之前，在线上有个[预览版本](http://fox-edge-demo.fox-tech.cn)，你现在就可以直接体验
 
 ## 联系方式
-![image](http://docs.fox-tech.cn/_images/weixin.png)
+EMAIL： 5389408@QQ.COM
+
+## 微信技术交流群
+<img src="http://docs.fox-tech.cn/_images/weixinqun-01.jpg" width="40%" height="40%"/>
 
